@@ -7,13 +7,16 @@ import Componente02 from './Componente02';
 // Componente do arquivo index.jsx
 class Principal extends React.Component{
     render(){
-        return(
+        return (
             <div>
-                <Componente01/>
-                <Componente02/>
+                <p>Olá, {this.props.json.nome}</p>
+                <p>Você tem: {this.props.json.idade} anos</p>
             </div>
-        )
+        );
     }
 }
 
-ReactDOM.render(<Principal/>, document.getElementById('root'))
+// JSON
+var dados = {nome: "Victor Lourenço", idade:18};
+
+ReactDOM.render(<Principal json={dados}/>, document.getElementById('root'))
