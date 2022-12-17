@@ -6,3 +6,6 @@ O JSX é um acrônimo para JavaScript XML, e é considerado um extensão da sint
 
 ## Props 
 São argumentos que pode ser passados para um componente/elemento JSX
+
+## State
+O state em React serve para guardar os dados de um componente
