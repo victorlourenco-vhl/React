@@ -3,3 +3,6 @@ Curso de React básico promovido pelo instrutor Ralf Lima. https://www.youtube.c
 
 ## JSX
 O JSX é um acrônimo para JavaScript XML, e é considerado um extensão da sintaxe do JavaScript para criação e rendereização de componentes em uma aplicação React.
+
+## Props 
+São argumentos que pode ser passados para um componente/elemento JSX
