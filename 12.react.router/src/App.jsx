@@ -1,20 +1,16 @@
-import {BrowserRouter, Route, Routes, Link} from 'react-router-dom'
-import Home from './pages/Home'
-import Empresa from './pages/Empresa'
-import Contato from './pages/Contato'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import Home from './components/Home'
+import Users from './components/Users'
+import Contato from './components/Contato'
+import Navbar from './components/Navbar'
 
-function App(){
-  return(
+function App() {
+  return (
     <BrowserRouter>
-      <ul>
-        <li><Link to="/">Home</Link></li>
-        <li><Link to="/empresa">Empresa</Link></li>
-        <li><Link to="/contato">Contato</Link></li>
-      </ul>
-     
+      <Navbar/>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/empresa" element={<Empresa />} />
+        <Route path="/users" element={<Users />} />
         <Route path="/contato" element={<Contato />} />
       </Routes>
 
